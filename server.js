@@ -1,6 +1,4 @@
-'use strict'
 
-var bloomrun = require('bloomrun')();
 const http = require('http');
 
 const server = http.createServer((req, res) => {
