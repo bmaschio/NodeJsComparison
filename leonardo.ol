@@ -49,7 +49,9 @@ interface MySecondInterface {
   execution{ concurrent }
   main{
       [myOp(request)(response){
-        response.iam = "I'am "+ request.name + " " + request.surname + " and I am  " + (request.age +1)
+        response.iam = "I'am "+ request.name + " " + request.surname + " and I am  " + (request.age +1);
+        mime = "application/json";
+        format = "json"
      }]
 
      [myOp1(request)(response){

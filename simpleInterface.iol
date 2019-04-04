@@ -10,7 +10,8 @@ type myOpResponse:any{
 
 interface MySimpleInterface {
  RequestResponse:
-  myOp(myOpRequest)(myOpResponse)
+  myOp(myOpRequest)(myOpResponse),
+  checkAge(undefined)(undefined)
 }
 
 type myOp1Request:void{

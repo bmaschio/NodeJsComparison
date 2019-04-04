@@ -5,6 +5,7 @@ outputPort myHttpPort{
    Location:"socket://localhost:8000"
    Protocol:http{
         .debug= true;
+        .debug.showContent= true;
         .method = "GET"
    }
    Interfaces:MySimpleInterface
